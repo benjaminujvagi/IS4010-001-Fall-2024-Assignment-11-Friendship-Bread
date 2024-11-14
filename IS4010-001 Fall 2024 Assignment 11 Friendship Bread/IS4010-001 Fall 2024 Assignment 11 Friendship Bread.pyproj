@@ -21,10 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cleanedDataPackage\cleanedData.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CSVPackage\CSVProcessor.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CSVPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="duplicatesPackage\duplicates.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
@@ -35,6 +41,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Zipcodepackage\__init__.py">
+    <Compile Include="pepsiPackage\pepsiPackage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pepsiPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -43,8 +53,13 @@
     <Folder Include="mainPackage\" />
     <Folder Include="Data\" />
     <Folder Include="Zipcodepackage\" />
+    <Folder Include="pepsiPackage\" />
+    <Folder Include="duplicatesPackage\" />
+    <Folder Include="cleanedDataPackage\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\cleanedData.csv" />
+    <Content Include="Data\dataAnomalies.csv" />
     <Content Include="Data\fuelPurchaseData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
