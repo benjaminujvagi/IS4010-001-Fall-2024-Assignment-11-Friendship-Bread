@@ -21,10 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cleanedDataPackage\cleanedData.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CSVPackage\CSVProcessor.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CSVPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="duplicatesPackage\duplicates.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
@@ -43,6 +49,8 @@
     <Folder Include="mainPackage\" />
     <Folder Include="Data\" />
     <Folder Include="pepsiPackage\" />
+    <Folder Include="duplicatesPackage\" />
+    <Folder Include="cleanedDataPackage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\cleanedData.csv" />
