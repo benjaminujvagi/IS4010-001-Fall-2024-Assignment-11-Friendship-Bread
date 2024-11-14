@@ -31,13 +31,22 @@
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="pepsiPackage\pepsiPackage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pepsiPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CSVPackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="Data\" />
+    <Folder Include="pepsiPackage\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\cleanedData.csv" />
+    <Content Include="Data\dataAnomalies.csv" />
     <Content Include="Data\fuelPurchaseData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
